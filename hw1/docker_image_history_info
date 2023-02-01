@@ -1,0 +1,13 @@
+IMAGE          CREATED             CREATED BY                                      SIZE      COMMENT
+b39fb298451a   32 minutes ago      CMD ["/bin/sh" "-c" "/h1_script.sh"]            0B        buildkit.dockerfile.v0
+<missing>      32 minutes ago      EXPOSE map[3000/tcp:{}]                         0B        buildkit.dockerfile.v0
+<missing>      32 minutes ago      ENTRYPOINT ["/h1_script.sh"]                    0B        buildkit.dockerfile.v0
+<missing>      32 minutes ago      COPY h1_script.sh / # buildkit                  1.99kB    buildkit.dockerfile.v0
+<missing>      About an hour ago   RUN /bin/sh -c apt-get install -y sysbench #…   21MB      buildkit.dockerfile.v0
+<missing>      About an hour ago   RUN /bin/sh -c apt-get update # buildkit        40.5MB    buildkit.dockerfile.v0
+<missing>      5 days ago          /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B        
+<missing>      5 days ago          /bin/sh -c #(nop) ADD file:8b180a9b4497de0c6…   72.8MB    
+<missing>      5 days ago          /bin/sh -c #(nop)  LABEL org.opencontainers.…   0B        
+<missing>      5 days ago          /bin/sh -c #(nop)  LABEL org.opencontainers.…   0B        
+<missing>      5 days ago          /bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH     0B        
+<missing>      5 days ago          /bin/sh -c #(nop)  ARG RELEASE                  0B        
