@@ -4,7 +4,8 @@ clear
 echo "Running the first experiment for cpu with prime number parameter = 2000"
 for iter in 1 2 3 4 5
 do
-	sysbench --test=cpu --cpu-max-prime=2000 run >> testcase_1_results
+	sysbench --test=cpu --cpu-max-prime=2000 run >> testcase_1_results &
+	top -n 1 -u pbellignur > top_tc1
 done
 
 echo "Finished running first experiment. Results stored in testcase_1_results file"
@@ -14,7 +15,8 @@ echo "\n\n"
 echo "Running the second experiment for cpu with prime number parameter = 20000 and time = 150 seconds"
 for iter in 1 2 3 4 5
 do
-	sysbench --test=cpu --cpu-max-prime=20000 --time=150 run >> testcase_2_results
+	sysbench --test=cpu --cpu-max-prime=20000 --time=150 run >> testcase_2_results &
+	top -n 1 -u root > top_tc2
 done
 
 echo "Finished running second experiment. Results stored in testcase_2_results file"
